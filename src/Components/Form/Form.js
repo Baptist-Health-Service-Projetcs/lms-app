@@ -1,6 +1,6 @@
 import React from "react";
 import RadioGroup from "../../hoc/radiogroup";
-import TextInput from "../TextInput";
+import TextInput from "./TextInput";
 
 const Form = (props) => {
     const values = [

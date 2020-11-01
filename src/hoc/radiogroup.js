@@ -1,4 +1,4 @@
-import RadioInput from "../Components/radio";
+import RadioInput from "../Components/Form/radio";
 
 const RadioGroup = (props) => {
     const values = props.values;
