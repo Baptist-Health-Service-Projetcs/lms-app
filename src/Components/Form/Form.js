@@ -1,6 +1,8 @@
 import React from "react";
-import RadioGroup from "../../hoc/radiogroup";
-import TextInput from "./TextInput";
+import RadioGroup from "../../hoc/RadioGroup";
+import InputField from "./InputField";
+import TextField from "./textarea";
+import CheckInput from "./checkbox";
 
 const Form = (props) => {
     const values = [
@@ -16,8 +18,10 @@ const Form = (props) => {
     return (
         <div>
             <h1>{props.title}</h1>
-            <TextInput name="Name">Enter Your Name</TextInput> 
-        <RadioGroup values={values} name="gender"></RadioGroup>
+            <InputField name="Name">Enter Your Name</InputField> 
+            <RadioGroup values={values} name="gender"></RadioGroup>
+            <TextField name="Message" value="Hello World">Message</TextField>
+            <InputField type="checkbox">Hello</InputField>
         </div> 
     );
 };

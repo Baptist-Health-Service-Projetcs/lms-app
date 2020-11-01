@@ -1,4 +1,4 @@
-import RadioInput from "../Components/Form/radio";
+import InputField from "../Components/Form/InputField";
 
 const RadioGroup = (props) => {
     const values = props.values;
@@ -6,7 +6,7 @@ const RadioGroup = (props) => {
         <div>
             {
                 values.map((item, index) => {
-                    return <RadioInput key={index} value={item.value} name={props.name}>{item.label}</RadioInput> 
+                    return <InputField type="radio" key={index} value={item.value} name={props.name}>{item.label}</InputField> 
                 })
             }
         </div>
