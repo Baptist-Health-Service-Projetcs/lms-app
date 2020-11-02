@@ -1,28 +1,23 @@
 import React from "react";
-import RadioGroup from "../../hoc/RadioGroup";
-import InputField from "./InputField";
-import TextField from "./textarea";
-import CheckInput from "./checkbox";
+import FormSelect from "./FormSelect";
 
 const Form = (props) => {
-    const values = [
+    const formSelectData = [
         {
-            label: "Male",
-            value: 1
+            content: "Frontend web development",
+            value: "frontend"
         },
         {
-            label: "Female",
-            value: 0
+            content: "Backend web development",
+            value: "backend"
         }
-    ]
+    ];
     return (
         <div>
-            <h1>{props.title}</h1>
-            <InputField name="Name">Enter Your Name</InputField> 
-            <RadioGroup values={values} name="gender"></RadioGroup>
-            <TextField name="Message" value="Hello World">Message</TextField>
-            <InputField type="checkbox">Hello</InputField>
-        </div> 
+            <h3>{props.title}</h3>
+            <p>This is the form</p>
+            <FormSelect data={formSelectData}></FormSelect>
+        </div>
     );
 };
 
